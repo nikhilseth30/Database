@@ -1,0 +1,35 @@
+<div class="container">
+  <form action="/emp/final-update" method="post">
+  <input type="hidden" name="id" value="{{emp.id}}">
+<div class="form-group">
+  <fieldset>
+    <label class="form-label mt-4" for="readOnlyInput">Full Name</label>
+    <input class="form-control" name="fullName" type="text" placeholder="Enter Your Name Here..." value="{{emp.fullName}}">
+  </fieldset>
+</div>
+<div class="form-group">
+  <fieldset>
+    <label class="form-label mt-4" for="readOnlyInput">Email</label>
+    <input class="form-control" name="email" type="text" placeholder="Enter Your's Email Here..." value="{{emp.email}}">
+  </fieldset>
+</div>
+<div class="form-group">
+  <fieldset>
+    <label class="form-label mt-4" for="readOnlyInput">Mobile</label>
+    <input class="form-control" name="mobile" type="text" placeholder="Enter Mobile Number Here..." value="{{emp.mobile}}">
+  </fieldset>
+</div>
+<div class="form-group">
+  <fieldset>
+    <label class="form-label mt-4" for="readOnlyInput">City</label>
+    <input class="form-control" name="city" type="text" placeholder="Enter Your's City Here..."value="{{emp.city}}">
+  </fieldset>
+</div>
+<br/>
+<input type="Submit" class="btn btn-lg btn-info btn-block"/>
+
+
+</form>
+
+</div>
+

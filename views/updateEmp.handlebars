@@ -1,0 +1,26 @@
+<div class="container">
+<table class="table table-hover">
+  <thead>
+      <tr class="table-active">
+      <th scope="row">Name</th>
+      <td>Email</td>
+      <td>Mobile</td>
+      <td>City</td>
+      <td>Update</td>
+    </tr>
+</thead>
+  <tbody>
+    {{#each list}}
+
+    <tr>
+      <th scope="row">{{this.fullName}}</th>
+      <td>{{this.email}}</td>
+      <td>{{this.mobile}}</td>
+      <td>{{this.city}}</td>
+      <td><a href="/emp/pre-update/{{this._id}}" class="btn btn-info btn-block">Update</a></td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+</div>
+
